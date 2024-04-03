@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Quiz</title>
+
+    <!-- CSS  -->
+    <link href="plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="custom.css" type="text/css" rel="stylesheet" >
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="index.html" id="logo-container" class="brand-logo">Superhero</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#work">Marvel</a></li>
+                    <li><a href="#team">DC</a></li>
+                    <li><a href="#intro">Quiz</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#work">Marvel</a></li>
+                    <li><a href="#team">DC</a></li>
+                    <li><a href="#intro">Quiz</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax.jpg"></div>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="center header cd-headline letters type">
+            <span style="color: white;">I Love</span> 
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Marvel</b>
+                <b class="is-hidden">DC</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Quiz Section-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <h2 class="center header text_h2"> <span class="span_h2 red"> Marvel Quiz </span><span class="span_h2 blue"> DC Quiz </span> </h2>
+            <p></p>
+            <div class="scoreboard" id="scoreboard">
+                <div class="marvel-score">Marvel Score: 100</div>
+                <div class="dc-score">DC Score: 90</div>
+            </div>
+            <div class="form-group">
+                <label for="category">Choose a category:</label>
+                <select id="category">
+                    <option value="dc">DC Comics</option>
+                    <option value="marvel">Marvel Comics</option>
+                </select>
+            </div>
+            <form id="quizForm">
+                <!-- Questions will be dynamically added here -->
+            </form>
+            <button id="submitBtn" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <!-- Footer Content -->
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="plugin-min.js"></script>
+<script src="custom.js"></script>
+
+</body>
+</html>

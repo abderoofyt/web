@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Website Design Using HTML and CSS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+  <nav id="sideNav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="table.html">TABLE</a></li>
+      <li><a href="fixtures.html">FIXTURES</a></li>
+      <li><a href="players.html">PLAYERS</a></li>
+      <li><a href="tourney.html">TOURNAMENT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <img src="images/menu.png" alt="_" id="menuBtn">
+
+  <!-- Contact -->
+  <section id="contact">
+    <img src="images/logo.png" alt="X typo Logo" class="logo">
+    <div class="container contact-row">
+      <div class="contact-left-col">
+        <h1>Sign Up to join our<br />learning community</h1>
+        <form>
+          <input type="text" placeholder="Enter Name">
+          <input type="email" placeholder="Enter Email">
+          <input type="password" placeholder="Enter Password">
+          <div class="btn-box">
+            <button class="common-btn">Sign Up</button>
+            <button class="common-btn">Start Free Trial</button>
+          </div>
+        </form>
+        <div class="line">
+          <span class="line-1"></span><br />
+          <span class="line-2"></span><br />
+          <span class="line-3"></span>
+        </div>
+      </div>
+      <div class="contact-right-col">
+        <img src="images/contact.png" alt="_">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container footer-row">
+      <hr />
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title">
+            <h4>Product</h4>
+            <small>Our Plan</small><br />
+            <small>Free Trial</small>
+          </div>
+          <div class="link-title">
+            <h4>About Us</h4>
+            <small>Request Demo</small><br />
+            <small>FAQs</small>
+          </div>
+          <div class="link-title">
+            <h4>Support</h4>
+            <small>Features</small><br />
+            <small>Contact Us</small>
+          </div>
+          <div class="link-title">
+            <h4>Explore</h4>
+            <small>Find a nonprofit</small><br />
+            <small>Coporate Solution</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-info">
+          <div class="copyright-text">
+            <small>copyright 2024 VERSUS</small>
+          </div>
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="_">
+            <button class="common-btn">English</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- social-icons -->
+  <div class="social-icons">
+    <img src="images/facebook.png" alt="_">
+    <img src="images/instagram.png" alt="_">
+    <img src="images/twitter.png" alt="_">
+    <img src="images/linkedin.png" alt="_">
+  </div>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function () {
+      if (sideNav.style.right === "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px";
+      }
+    }
+  </script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Website Design Using HTML and CSS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+  <nav id="sideNav">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="table.html">TABLE</a></li>
+        <li><a href="fixtures.html">FIXTURES</a></li>
+        <li><a href="players.html">PLAYERS</a></li>
+        <li><a href="tourney.html">TOURNAMENT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <img src="images/menu.png" alt="_" id="menuBtn">
+
+  <!-- Tournament Bracket Section -->
+  <section id="tournamentSection">
+    <div class="container">
+      <hr />
+      <h1>Tournament Bracket</h1>
+      <textarea id="players" placeholder="Enter 8 player names, one per line">
+        Player 1
+        Player 2
+        Player 3
+        Player 4
+      </textarea>
+      <div><button class="common-btn" onclick="startTournament()">Start Tournament</button></div>
+      <div id="tournamentBracket"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container footer-row">
+      <hr />
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title">
+            <h4>Product</h4>
+            <small>Our Plan</small><br />
+            <small>Free Trial</small>
+          </div>
+          <div class="link-title">
+            <h4>About Us</h4>
+            <small>Request Demo</small><br />
+            <small>FAQs</small>
+          </div>
+          <div class="link-title">
+            <h4>Support</h4>
+            <small>Features</small><br />
+            <small>Contact Us</small>
+          </div>
+          <div class="link-title">
+            <h4>Explore</h4>
+            <small>Find a nonprofit</small><br />
+            <small>Corporate Solution</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-info">
+          <div class="copyright-text">
+            <small>copyright 2024 VERSUS</small>
+          </div>
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="_">
+            <button class="common-btn">English</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <img src="images/facebook.png" alt="_">
+    <img src="images/instagram.png" alt="_">
+    <img src="images/twitter.png" alt="_">
+    <img src="images/linkedin.png" alt="_">
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function () {
+      if (sideNav.style.right === "-250px") {
+        sideNav.style.right = "0";
+      } else {
+        sideNav.style.right = "-250px";
+      }
+    }
+  </script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true
+    });
+  </script>
+</body>
+
+</html>
