@@ -1,3 +1,5 @@
-## Responsive Web Template Xypo
+## VERSUS = Generate Tournament Brackets and view table
 
-![Edit [Web] Responsive Web Xypo](../../../gifs/website/template/responsive-web-xypo.gif)
+[Video Title]("readme/05.04.2024_17.47.40_REC.mp4")
+
+copyright 2024 VERSUS
