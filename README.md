@@ -7,12 +7,12 @@
 
 ## VERSUS = Generate Tournament Brackets and view table
 <p align="center">
-  <img src="versus/versus.gif" alt="Video">
+  <img src="Versus/versus.gif" alt="Video">
 </p>
 
 ## Super heroes
 <p align="center">
-  <img src="super heroes/heroes.gif" alt="Video">
+  <img src="Super Heroes/heroes.gif" alt="Video">
 </p>
 
 copyright 2024 VERSUS
